@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Truculenta", system-ui;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    height: 100vh;
+    padding: 2rem;
+}
+:root {
+  --bc-color0: #d6fff3;
+  --bc-color1: #c7ffed;
+  --bc-color2: #c2ffec;
+  --bc-color3: #adffe5;
+  --bc-color4: #85ffd8;
+  --bc-color5: #1fffb8;
+  --text-color1: #171a21;
+  --text-color2: #111318;
+  --text-color3: #2a2f3c;
+  --font-family-1: "Roboto", sans-serif;
+  --font-family-2: "Indie Flower", cursive;
+  --transition: all 0.3s linear;
+}
+
+header{
+    min-height: 100vh;
+}
+img {
+  width: 250px;
+}
