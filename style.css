@@ -5,15 +5,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Truculenta", system-ui;
+  color: var(--text-color2);
+  font-family: var(--font-family-1);
 }
 
-html{
-    font-size: 16px;
+html {
+  font-size: 16px;
 }
 
-body{
-    height: 100vh;
-    padding: 2rem;
+body {
+  height: 100vh;
+  padding: 2rem;
 }
 :root {
   --bc-color0: #d6fff3;
@@ -27,11 +29,45 @@ body{
   --text-color3: #2a2f3c;
   --font-family-1: "Roboto", sans-serif;
   --font-family-2: "Indie Flower", cursive;
-  --transition: all 0.3s linear;
+  --transition: all 0.15s linear;
 }
 
-header{
-    min-height: 100vh;
+/* Header Styles */
+
+header {
+  min-height: 60vh;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-size: 1.16rem;
+}
+.nav-links ul li {
+  margin: 0.4rem;
+}
+a {
+  font-family: var(--font-family-2);
+  text-decoration: none;
+  position: relative;
+  cursor: pointer;
+}
+a::after {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--bc-color3);
+  content: "";
+  transition: var(--transition);
+}
+a:hover {
+  opacity: 0.75;
+}
+a:hover::after {
+  width: 3rem;
 }
 img {
   width: 250px;
