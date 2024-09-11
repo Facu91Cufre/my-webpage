@@ -15,8 +15,9 @@ html {
 
 body {
   height: 100vh;
-  padding: 2rem;
+  padding: 1rem;
 }
+
 :root {
   --bc-color0: #d6fff3;
   --bc-color1: #c7ffed;
@@ -35,7 +36,8 @@ body {
 /* Header Styles */
 
 header {
-  min-height: 60vh;
+  min-height: 70vh;
+  box-shadow: 0 4px 10px -10px gray;
 }
 .nav-links ul {
   display: flex;
@@ -46,29 +48,108 @@ header {
 .nav-links ul li {
   margin: 0.4rem;
 }
-a {
+header a {
   font-family: var(--font-family-2);
   text-decoration: none;
   position: relative;
-  cursor: pointer;
 }
-a::after {
+header a::after {
   display: block;
   position: absolute;
   left: 0;
-  bottom: -10px;
+  bottom: -.7rem;
   width: 0;
   height: 0.2rem;
   background-color: var(--bc-color3);
   content: "";
   transition: var(--transition);
 }
-a:hover {
-  opacity: 0.75;
+header a:hover {
+  opacity: 0.87;
 }
 a:hover::after {
-  width: 3rem;
+  width: 4.7rem;
+}
+header h2 {
+  font-size: 1.3rem;
+  margin-top: 3rem;
+  line-height: 2.5;
+  font-family: var(--font-family-2);
+}
+
+/* About Me Section Styles */
+
+.about-me {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  letter-spacing: 0.19rem;
+  text-align: left;
+  margin-top: 2rem;
+}
+
+/* Section Tag Styles */
+
+section {
+  margin: 2.4rem 0;
+}
+section div {
+  display: grid;
+  justify-content: center;
+  gap: 1.3rem;
+}
+section h1 {
+  font-family: var(--font-family-2);
+  font-size: 2.6rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
 }
 img {
-  width: 250px;
+  width: 19rem;
+  height: 11rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+/* Contact Section Styles */
+
+#section-contact {
+  text-align: center;
+}
+#section-contact h5 {
+  font-size: 2rem;
+  margin-bottom: 0.7rem;
+}
+.underline {
+  background-color: var(--bc-color3);
+  width: 7.8rem;
+  height: 0.24rem;
+  margin: 0.7rem auto;
+}
+.contact-title {
+  text-align: center;
+}
+.cont-socials {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.cont-socials a{
+  cursor: default;
+  display: inline;
+}
+.cont-socials i {
+  font-size: 1.85rem;
+  margin: 0.9rem 0;
+  cursor: pointer;
+}
+.cont-socials i:hover{
+  opacity: .87;
+  transition: var(--transition);
+  transform: scale(1.12);
+}
+/* Footer Styles */
+
+footer p {
+  text-align: center;
+  font-size: 0.7rem;
 }
