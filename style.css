@@ -226,3 +226,25 @@ button {
   top: 0;
   right: -0.2rem;
 }
+
+/* Media Queries */
+
+@media screen and (min-width: 700px) {
+  .cont-projects,
+.cont-diplomas {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+}
+
+@media screen and (min-width: 1000px) {
+  .cont-projects,
+.cont-diplomas {
+  grid-template-columns: repeat(3, 1fr);
+}
+.cont-project,
+.cont-diploma {
+  width: 25rem;
+}
+}
+
