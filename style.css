@@ -34,6 +34,10 @@ body {
   --transition: all 0.25s linear;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* Header Styles */
 
 header {
@@ -51,7 +55,6 @@ header {
 }
 header a {
   font-family: var(--font-family-2);
-  text-decoration: none;
   position: relative;
 }
 header a::after {
@@ -110,7 +113,24 @@ section h1 {
 }
 .cont-project,
 .cont-diploma {
-  width: 30rem;
+  width: 15rem;
+  position: relative;
+}
+.cont-project::after,
+.cont-diploma::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.cont-project:hover::after,
+.cont-diploma:hover::after {
+  background-color: rgba(0, 0, 0, 0.09);
 }
 img {
   width: 100%;
@@ -184,14 +204,8 @@ footer p {
   border-radius: 0.05rem;
   position: relative;
 }
-.cont-modal-img {
-  text-align: center;
-}
 .cont-modal-img img {
   cursor: default;
-  width: 100%;
-  height: 100%;
-  margin-top: 0.5rem;
 }
 .cont-modal-buttons {
   display: flex;
