@@ -105,5 +105,15 @@ certificates.addEventListener("click", (e) => {
 });
 
 closeBtn.addEventListener("click", closeModal);
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeModal();
+  }
+});
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) {
+    closeModal();
+  }
+});
 
 createProject();
