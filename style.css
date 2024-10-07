@@ -102,7 +102,6 @@ section {
   grid-template-columns: repeat(1, 1fr);
   gap: 1.13rem;
   padding: 4rem;
-  text-align: center;
   justify-items: center;
 }
 section h1 {
@@ -204,8 +203,12 @@ footer p {
   border-radius: 0.05rem;
   position: relative;
 }
+.cont-modal-img{
+  width: 50rem;
+}
 .cont-modal-img img {
   cursor: default;
+  width: 100%;
 }
 .cont-modal-buttons {
   display: flex;
@@ -236,8 +239,17 @@ button {
 }
 
 }
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 900px) {
+  .cont-projects,
+.cont-diplomas {
+  grid-template-columns: repeat(2, 1fr);
+}
+.cont-project,
+.cont-diploma {
+  width: 19rem;
+}
+}
+@media screen and (min-width: 1350px) {
   .cont-projects,
 .cont-diplomas {
   grid-template-columns: repeat(3, 1fr);

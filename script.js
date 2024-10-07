@@ -61,6 +61,7 @@ const closeModal = () => {
 
 projectsContainer.addEventListener("click", (e) => {
   openModal(e.target);
+  console.log(e.target.tagName)
 });
 certificates.addEventListener("click", (e) => {
   openModal(e.target);
